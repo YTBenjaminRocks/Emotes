@@ -2,146 +2,574 @@
 <html>
 <head>
 <style>
-img{
-    width:100%;
-    max-width:80px;
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  opacity: 0.8;
 }
-</style> 
+div.polaroid:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  opacity: 1.0;
+  font-weight: bold;
+}
+div.polaroid > img {
+  width:100%;
+  max-width:100px;
+}
+div.container {
+  padding: 1% 30px;
+}
+p {
+  text-align: center;
+  line-height: 10%;
+}
+</style>
+<script>
+function CopyName(id) {
+  var copyText = document.getElementById(id);
+  copyText.hidden = false;
+  copyText.select();
+  document.execCommand("copy");
+  copyText.hidden = true;
+}
+</script> 
 </head>
 <body>
-<h1>Currently supported Emotes:</h1>
-
-
 <table>
-  <tr>
-    <td>amogus</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/amogus.gif"></td>
-<tr>
-    <td>amongParty</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/amongParty.gif"></td>
-<tr>
-    <td>bananaDance</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/bananaDance.gif"></td>
-<tr>
-    <td>birbRave</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/birbRave.gif"></td>
-<tr>
-    <td>BLANKIES</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/BLANKIES.webp"></td>
-<tr>
-    <td>blobDance</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/blobDance.webp"></td>
-<tr>
-    <td>bongoTap</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/bongoTap.gif"></td>
-<tr>
-    <td>BONK</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/BONK.gif"></td>
-<tr>
-    <td>browsW</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/browsW.gif"></td>
-<tr>
-    <td>catJAM</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/catJAM.webp"></td>
-<tr>
-    <td>clapW</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/clapW.gif"></td>
-<tr>
-    <td>clappingW</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/clappingW.gif"></td>
-<tr>
-    <td>coolDoge</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/coolDoge.gif"></td>
-<tr>
-    <td>dogeDance</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/dogeDance.gif"></td>
-<tr>
-    <td>drumTime</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/drumTime.webp"></td>
-<tr>
-    <td>duckPls</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/duckPls.webp"></td>
-<tr>
-    <td>EDM</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/EDM.webp"></td>
-<tr>
-    <td>FeelsRainMan</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/FeelsRainMan.gif"></td>
-<tr>
-    <td>fluteJAM</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/fluteJAM.gif"></td>
-<tr>
-    <td>guitarTime</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/guitarTime.webp"></td>
-<tr>
-    <td>headbangingW</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/headbangingW.gif"></td>
-<tr>
-    <td>jammiesW</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/jammiesW.webp"></td>
-<tr>
-    <td>KEKW</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/KEKW.webp"></td>
-<tr>
-    <td>marioDance</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/marioDance.gif"></td>
-<tr>
-    <td>catParty</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/catParty.gif"></td>
-<tr>
-    <td>miyanoHype</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/miyanoHype.gif"></td>
-<tr>
-    <td>MYAAA</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/MYAAA.gif"></td>
-<tr>
-    <td>NOPERS</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/NOPERS.gif"></td>
-<tr>
-    <td>nyanPls</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/nyanPls.webp"></td>
-<tr>
-    <td>parrotJAM</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/parrotJAM.gif"></td>
-<tr>
-    <td>partyKirby</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/partyKirby.gif"></td>
-<tr>
-    <td>peepoArrive</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoArrive.webp"></td>
-<tr>
-    <td>peepoBlanket</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoBlanket.png"></td>
-<tr>
-    <td>peepoBye</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoBye.webp"></td>
-<tr>
-    <td>peepoChat</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoChat.webp"></td>
-<tr>
-    <td>peepoClap</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoClap.webp"></td>
-<tr>
-    <td>peepoDj</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoDj.webp"></td>
-<tr>
-    <td>peepoShy</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoShy.webp"></td>
-<tr>
-    <td>pepeJAM</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pepeJAM.gif"></td>
-<tr>
-    <td>pikachuS</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pikachuS.png"></td>
-<tr>
-    <td>PogU</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/PogU.webp"></td>
-<tr>
-    <td>popCat</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/popCat.webp"></td>
-<tr>
-    <td>pressF</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pressF.png"></td>
-<tr>
-    <td>pugPls</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pugPls.webp"></td>
-<tr>
-    <td>rainbowPls</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/rainbowPls.webp"></td>
-<tr>
-    <td>ratJAM</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/ratJAM.webp"></td>
-<tr>
-    <td>rickroll</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/rickroll.gif"></td>
-<tr>
-    <td>SadCatW</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/SadCatW.png"></td>
-<tr>
-    <td>SadgeCry</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/SadgeCry.webp"></td>
-<tr>
-    <td>turtleHop</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleHop.webp"></td>
-<tr>
-    <td>turtleAngry</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleAngry.png"></td>
-<tr>
-    <td>turtleCry</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleCry.png"></td>
-<tr>
-    <td>turtleDrip</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleDrip.png"></td>
-<tr>
-    <td>turtleFlush</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleFlush.png"></td>
-<tr>
-    <td>turtleHYPE</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleHYPE.gif"></td>
-<tr>
-    <td>turtleJAM</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleJAM.webp"></td>
-<tr>
-    <td>turtlePop</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtlePop.gif"></td>
-<tr>
-    <td>turtleShower</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleShower.gif"></td>
-<tr>
-    <td>turtleHi</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleHi.png"></td>
-<tr>
-    <td>turtleYo</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleYo.gif"></td>
-<tr>
-    <td>turtleShoe</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleShoe.gif"></td>
-<tr>
-    <td>lightersUp</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/lightersUp.gif"></td>
-<tr>
-        <td>lionDance</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/lionDance.gif"></td>
-<tr>
-    <td>widepeepoHappy</td>  <td><img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/widepeepoHappy.webp"></td>
-  </tr>
+	<thead>
+		<p style="font-size:50px">Currently supported Emotes:</p>
+		<p>(Just click the pic to copy text to clipboard)</p>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/amogus.gif" onclick="CopyName('amogus')" style="width:100%">
+				  <div id="amogus_container" class="container" onclick="CopyName('amogus')">
+				  <p>amogus <input  type="text" value="amogus" id="amogus" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/amongParty.gif" onclick="CopyName('amongParty')" style="width:100%">
+				  <div id="amongParty_container" class="container" onclick="CopyName('amongParty')">
+				  <p>amongParty <input  type="text" value="amongParty" id="amongParty" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/bananaDance.gif" onclick="CopyName('bananaDance')" style="width:100%">
+				  <div id="bananaDance_container" class="container" onclick="CopyName('bananaDance')">
+				  <p>bananaDance <input  type="text" value="bananaDance" id="bananaDance" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/birbRave.gif" onclick="CopyName('birbRave')" style="width:100%">
+				  <div id="birbRave_container" class="container" onclick="CopyName('birbRave')">
+				  <p>birbRave <input  type="text" value="birbRave" id="birbRave" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/BLANKIES.webp" onclick="CopyName('BLANKIES')" style="width:100%">
+				  <div id="BLANKIES_container" class="container" onclick="CopyName('BLANKIES')">
+				  <p>BLANKIES <input  type="text" value="BLANKIES" id="BLANKIES" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/blobDance.webp" onclick="CopyName('blobDance')" style="width:100%">
+				  <div id="blobDance_container" class="container" onclick="CopyName('blobDance')">
+				  <p>blobDance <input  type="text" value="blobDance" id="blobDance" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/bongoTap.gif" onclick="CopyName('bongoTap')" style="width:100%">
+				  <div id="bongoTap_container" class="container" onclick="CopyName('bongoTap')">
+				  <p>bongoTap <input  type="text" value="bongoTap" id="bongoTap" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/BONK.gif" onclick="CopyName('BONK')" style="width:100%">
+				  <div id="BONK_container" class="container" onclick="CopyName('BONK')">
+				  <p>BONK <input  type="text" value="BONK" id="BONK" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/browsW.gif" onclick="CopyName('browsW')" style="width:100%">
+				  <div id="browsW_container" class="container" onclick="CopyName('browsW')">
+				  <p>browsW <input  type="text" value="browsW" id="browsW" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/catJAM.webp" onclick="CopyName('catJAM')" style="width:100%">
+				  <div id="catJAM_container" class="container" onclick="CopyName('catJAM')">
+				  <p>catJAM <input  type="text" value="catJAM" id="catJAM" hidden></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/clapW.gif" onclick="CopyName('clapW')" style="width:100%">
+				  <div id="clapW_container" class="container" onclick="CopyName('clapW')">
+				  <p>clapW <input  type="text" value="clapW" id="clapW" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/clappingW.gif" onclick="CopyName('clappingW')" style="width:100%">
+				  <div id="clappingW_container" class="container" onclick="CopyName('clappingW')">
+				  <p>clappingW <input  type="text" value="clappingW" id="clappingW" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/coolDoge.gif" onclick="CopyName('coolDoge')" style="width:100%">
+				  <div id="coolDoge_container" class="container" onclick="CopyName('coolDoge')">
+				  <p>coolDoge <input  type="text" value="coolDoge" id="coolDoge" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/dogeDance.gif" onclick="CopyName('dogeDance')" style="width:100%">
+				  <div id="dogeDance_container" class="container" onclick="CopyName('dogeDance')">
+				  <p>dogeDance <input  type="text" value="dogeDance" id="dogeDance" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/drumTime.webp" onclick="CopyName('drumTime')" style="width:100%">
+				  <div id="drumTime_container" class="container" onclick="CopyName('drumTime')">
+				  <p>drumTime <input  type="text" value="drumTime" id="drumTime" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/duckPls.webp" onclick="CopyName('duckPls')" style="width:100%">
+				  <div id="duckPls_container" class="container" onclick="CopyName('duckPls')">
+				  <p>duckPls <input  type="text" value="duckPls" id="duckPls" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/EDM.webp" onclick="CopyName('EDM')" style="width:100%">
+				  <div id="EDM_container" class="container" onclick="CopyName('EDM')">
+				  <p>EDM <input  type="text" value="EDM" id="EDM" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/FeelsRainMan.gif" onclick="CopyName('FeelsRainMan')" style="width:100%">
+				  <div id="FeelsRainMan_container" class="container" onclick="CopyName('FeelsRainMan')">
+				  <p>FeelsRainMan <input  type="text" value="FeelsRainMan" id="FeelsRainMan" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/fluteJAM.gif" onclick="CopyName('fluteJAM')" style="width:100%">
+				  <div id="fluteJAM_container" class="container" onclick="CopyName('fluteJAM')">
+				  <p>fluteJAM <input  type="text" value="fluteJAM" id="fluteJAM" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/guitarTime.webp" onclick="CopyName('guitarTime')" style="width:100%">
+				  <div id="guitarTime_container" class="container" onclick="CopyName('guitarTime')">
+				  <p>guitarTime <input  type="text" value="guitarTime" id="guitarTime" hidden></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/headbangingW.gif" onclick="CopyName('headbangingW')" style="width:100%">
+				  <div id="headbangingW_container" class="container" onclick="CopyName('headbangingW')">
+				  <p>headbangingW <input  type="text" value="headbangingW" id="headbangingW" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/jammiesW.webp" onclick="CopyName('jammiesW')" style="width:100%">
+				  <div id="jammiesW_container" class="container" onclick="CopyName('jammiesW')">
+				  <p>jammiesW <input  type="text" value="jammiesW" id="jammiesW" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/KEKW.webp" onclick="CopyName('KEKW')" style="width:100%">
+				  <div id="KEKW_container" class="container" onclick="CopyName('KEKW')">
+				  <p>KEKW <input  type="text" value="KEKW" id="KEKW" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/marioDance.gif" onclick="CopyName('marioDance')" style="width:100%">
+				  <div id="marioDance_container" class="container" onclick="CopyName('marioDance')">
+				  <p>marioDance <input  type="text" value="marioDance" id="marioDance" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/catParty.gif" onclick="CopyName('catParty')" style="width:100%">
+				  <div id="catParty_container" class="container" onclick="CopyName('catParty')">
+				  <p>catParty <input  type="text" value="catParty" id="catParty" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/miyanoHype.gif" onclick="CopyName('miyanoHype')" style="width:100%">
+				  <div id="miyanoHype_container" class="container" onclick="CopyName('miyanoHype')">
+				  <p>miyanoHype <input  type="text" value="miyanoHype" id="miyanoHype" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/MYAAA.gif" onclick="CopyName('MYAAA')" style="width:100%">
+				  <div id="MYAAA_container" class="container" onclick="CopyName('MYAAA')">
+				  <p>MYAAA <input  type="text" value="MYAAA" id="MYAAA" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/NOPERS.gif" onclick="CopyName('NOPERS')" style="width:100%">
+				  <div id="NOPERS_container" class="container" onclick="CopyName('NOPERS')">
+				  <p>NOPERS <input  type="text" value="NOPERS" id="NOPERS" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/nyanPls.webp" onclick="CopyName('nyanPls')" style="width:100%">
+				  <div id="nyanPls_container" class="container" onclick="CopyName('nyanPls')">
+				  <p>nyanPls <input  type="text" value="nyanPls" id="nyanPls" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/parrotJAM.gif" onclick="CopyName('parrotJAM')" style="width:100%">
+				  <div id="parrotJAM_container" class="container" onclick="CopyName('parrotJAM')">
+				  <p>parrotJAM <input  type="text" value="parrotJAM" id="parrotJAM" hidden></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/partyKirby.gif" onclick="CopyName('partyKirby')" style="width:100%">
+				  <div id="partyKirby_container" class="container" onclick="CopyName('partyKirby')">
+				  <p>partyKirby <input  type="text" value="partyKirby" id="partyKirby" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoArrive.webp" onclick="CopyName('peepoArrive')" style="width:100%">
+				  <div id="peepoArrive_container" class="container" onclick="CopyName('peepoArrive')">
+				  <p>peepoArrive <input  type="text" value="peepoArrive" id="peepoArrive" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoBlanket.png" onclick="CopyName('peepoBlanket')" style="width:100%">
+				  <div id="peepoBlanket_container" class="container" onclick="CopyName('peepoBlanket')">
+				  <p>peepoBlanket <input  type="text" value="peepoBlanket" id="peepoBlanket" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoBye.webp" onclick="CopyName('peepoBye')" style="width:100%">
+				  <div id="peepoBye_container" class="container" onclick="CopyName('peepoBye')">
+				  <p>peepoBye <input  type="text" value="peepoBye" id="peepoBye" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoChat.webp" onclick="CopyName('peepoChat')" style="width:100%">
+				  <div id="peepoChat_container" class="container" onclick="CopyName('peepoChat')">
+				  <p>peepoChat <input  type="text" value="peepoChat" id="peepoChat" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoClap.webp" onclick="CopyName('peepoClap')" style="width:100%">
+				  <div id="peepoClap_container" class="container" onclick="CopyName('peepoClap')">
+				  <p>peepoClap <input  type="text" value="peepoClap" id="peepoClap" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoDj.webp" onclick="CopyName('peepoDj')" style="width:100%">
+				  <div id="peepoDj_container" class="container" onclick="CopyName('peepoDj')">
+				  <p>peepoDj <input  type="text" value="peepoDj" id="peepoDj" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoShy.webp" onclick="CopyName('peepoShy')" style="width:100%">
+				  <div id="peepoShy_container" class="container" onclick="CopyName('peepoShy')">
+				  <p>peepoShy <input  type="text" value="peepoShy" id="peepoShy" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pepeJAM.gif" onclick="CopyName('pepeJAM')" style="width:100%">
+				  <div id="pepeJAM_container" class="container" onclick="CopyName('pepeJAM')">
+				  <p>pepeJAM <input  type="text" value="pepeJAM" id="pepeJAM" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pikachuS.png" onclick="CopyName('pikachuS')" style="width:100%">
+				  <div id="pikachuS_container" class="container" onclick="CopyName('pikachuS')">
+				  <p>pikachuS <input  type="text" value="pikachuS" id="pikachuS" hidden></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/PogU.webp" onclick="CopyName('PogU')" style="width:100%">
+				  <div id="PogU_container" class="container" onclick="CopyName('PogU')">
+				  <p>PogU <input  type="text" value="PogU" id="PogU" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/popCat.webp" onclick="CopyName('popCat')" style="width:100%">
+				  <div id="popCat_container" class="container" onclick="CopyName('popCat')">
+				  <p>popCat <input  type="text" value="popCat" id="popCat" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pressF.png" onclick="CopyName('pressF')" style="width:100%">
+				  <div id="pressF_container" class="container" onclick="CopyName('pressF')">
+				  <p>pressF <input  type="text" value="pressF" id="pressF" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pugPls.webp" onclick="CopyName('pugPls')" style="width:100%">
+				  <div id="pugPls_container" class="container" onclick="CopyName('pugPls')">
+				  <p>pugPls <input  type="text" value="pugPls" id="pugPls" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/rainbowPls.webp" onclick="CopyName('rainbowPls')" style="width:100%">
+				  <div id="rainbowPls_container" class="container" onclick="CopyName('rainbowPls')">
+				  <p>rainbowPls <input  type="text" value="rainbowPls" id="rainbowPls" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/ratJAM.webp" onclick="CopyName('ratJAM')" style="width:100%">
+				  <div id="ratJAM_container" class="container" onclick="CopyName('ratJAM')">
+				  <p>ratJAM <input  type="text" value="ratJAM" id="ratJAM" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/rickroll.gif" onclick="CopyName('rickroll')" style="width:100%">
+				  <div id="rickroll_container" class="container" onclick="CopyName('rickroll')">
+				  <p>rickroll <input  type="text" value="rickroll" id="rickroll" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/SadCatW.png" onclick="CopyName('SadCatW')" style="width:100%">
+				  <div id="SadCatW_container" class="container" onclick="CopyName('SadCatW')">
+				  <p>SadCatW <input  type="text" value="SadCatW" id="SadCatW" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/SadgeCry.webp" onclick="CopyName('SadgeCry')" style="width:100%">
+				  <div id="SadgeCry_container" class="container" onclick="CopyName('SadgeCry')">
+				  <p>SadgeCry <input  type="text" value="SadgeCry" id="SadgeCry" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleHop.webp" onclick="CopyName('turtleHop')" style="width:100%">
+				  <div id="turtleHop_container" class="container" onclick="CopyName('turtleHop')">
+				  <p>turtleHop <input  type="text" value="turtleHop" id="turtleHop" hidden></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleAngry.png" onclick="CopyName('turtleAngry')" style="width:100%">
+				  <div id="turtleAngry_container" class="container" onclick="CopyName('turtleAngry')">
+				  <p>turtleAngry <input  type="text" value="turtleAngry" id="turtleAngry" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleCry.png" onclick="CopyName('turtleCry')" style="width:100%">
+				  <div id="turtleCry_container" class="container" onclick="CopyName('turtleCry')">
+				  <p>turtleCry <input  type="text" value="turtleCry" id="turtleCry" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleDrip.png" onclick="CopyName('turtleDrip')" style="width:100%">
+				  <div id="turtleDrip_container" class="container" onclick="CopyName('turtleDrip')">
+				  <p>turtleDrip <input  type="text" value="turtleDrip" id="turtleDrip" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleFlush.png" onclick="CopyName('turtleFlush')" style="width:100%">
+				  <div id="turtleFlush_container" class="container" onclick="CopyName('turtleFlush')">
+				  <p>turtleFlush <input  type="text" value="turtleFlush" id="turtleFlush" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleHYPE.gif" onclick="CopyName('turtleHYPE')" style="width:100%">
+				  <div id="turtleHYPE_container" class="container" onclick="CopyName('turtleHYPE')">
+				  <p>turtleHYPE <input  type="text" value="turtleHYPE" id="turtleHYPE" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleJAM.webp" onclick="CopyName('turtleJAM')" style="width:100%">
+				  <div id="turtleJAM_container" class="container" onclick="CopyName('turtleJAM')">
+				  <p>turtleJAM <input  type="text" value="turtleJAM" id="turtleJAM" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtlePop.gif" onclick="CopyName('turtlePop')" style="width:100%">
+				  <div id="turtlePop_container" class="container" onclick="CopyName('turtlePop')">
+				  <p>turtlePop <input  type="text" value="turtlePop" id="turtlePop" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleShower.gif" onclick="CopyName('turtleShower')" style="width:100%">
+				  <div id="turtleShower_container" class="container" onclick="CopyName('turtleShower')">
+				  <p>turtleShower <input  type="text" value="turtleShower" id="turtleShower" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleHi.png" onclick="CopyName('turtleHi')" style="width:100%">
+				  <div id="turtleHi_container" class="container" onclick="CopyName('turtleHi')">
+				  <p>turtleHi <input  type="text" value="turtleHi" id="turtleHi" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleYo.gif" onclick="CopyName('turtleYo')" style="width:100%">
+				  <div id="turtleYo_container" class="container" onclick="CopyName('turtleYo')">
+				  <p>turtleYo <input  type="text" value="turtleYo" id="turtleYo" hidden></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleShoe.gif" onclick="CopyName('turtleShoe')" style="width:100%">
+				  <div id="turtleShoe_container" class="container" onclick="CopyName('turtleShoe')">
+				  <p>turtleShoe <input  type="text" value="turtleShoe" id="turtleShoe" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/lightersUp.gif" onclick="CopyName('lightersUp')" style="width:100%">
+				  <div id="lightersUp_container" class="container" onclick="CopyName('lightersUp')">
+				  <p>lightersUp <input  type="text" value="lightersUp" id="lightersUp" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/lionDance.gif" onclick="CopyName('lionDance')" style="width:100%">
+				  <div id="lionDance_container" class="container" onclick="CopyName('lionDance')">
+				  <p>lionDance <input  type="text" value="lionDance" id="lionDance" hidden></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div class="polaroid">
+				  <img src="https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/widepeepoHappy.webp" onclick="CopyName('widepeepoHappy')" style="width:100%">
+				  <div id="widepeepoHappy_container" class="container" onclick="CopyName('widepeepoHappy')">
+				  <p>widepeepoHappy <input  type="text" value="widepeepoHappy" id="widepeepoHappy" hidden></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+	</tbody>
 </table>
 
 </body>
