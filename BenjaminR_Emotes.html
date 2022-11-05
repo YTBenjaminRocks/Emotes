@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<title>
+  Emotes
+</title>
 <head>
 <style>
 div.polaroid {
@@ -10,7 +13,7 @@ div.polaroid {
   opacity: 0.8;
 }
 div.polaroid:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 3px 2px rgba(0,200, 0, 0.7);
   opacity: 1.0;
   font-weight: bold;
 }
@@ -19,11 +22,14 @@ div.polaroid > img {
   max-width:100px;
 }
 div.container {
-  padding: 1% 30px;
+  padding: 1% 0px;
 }
 p {
   text-align: center;
   line-height: 10%;
+}
+body {
+  background-color: #f5fff5;
 }
 </style>
 <script>
@@ -34,6 +40,17 @@ function CopyName(id) {
   document.execCommand("copy");
   copyText.hidden = true;
 }
+
+function ReadAllEmotes() {
+    var reader = new FileReader();
+	reader.readAsDataURL("https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/BenjaminR.emotes");
+	reader.onload = function (e) {
+	   var textToArray = reader.result.split("\n").map(function(x){return x.split(",")});
+	   console.log(textToArray); 
+	 };
+}
+
+window.onload = ReadAllEmotes();
 </script> 
 </head>
 <body>
@@ -43,6 +60,7 @@ function CopyName(id) {
 		<p>(Just click the pic to copy text to clipboard)</p>
 	</thead>
 	<tbody>
+		<tr><td><p style="text-align:right">one</p></td></tr>
 		<tr>
 			<td>
 				<div class="polaroid">
@@ -125,6 +143,7 @@ function CopyName(id) {
 				</div>
 			</td>
 		</tr>
+		<tr><td><p style="color:red">two</p></td></tr>
 		<tr>
 			<td>
 				<div class="polaroid">
