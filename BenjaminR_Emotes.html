@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Emotes</title>
-<link rel="icon" type="image/icon" href="emotes/favicon-turtle.png">
+<link rel="icon" type="image/icon" href="service/favicon-turtle.png">
 <style>
 div.polaroid {
   width: 80%;
@@ -16,6 +16,9 @@ div.polaroid:hover {
   opacity: 1.0;
   font-weight: bold;
 }
+div.polaroid:active {
+  animation: 1s linear 0s normal none infinite running scale;
+}
 div.polaroid > img {
   width:100%;
   max-width:100px;
@@ -23,15 +26,24 @@ div.polaroid > img {
 div.container {
   padding: 1% 0px;
 }
-div.random_container {
-  padding: 1% 0px;
-  max-width: 50px;
-  max-height: 40px;
+img.rot {
+  animation: 2s linear 0s normal none infinite running rot;
 }
-div.random_container:hover {
-  box-shadow: 0 0 3px 2px rgba(0,200, 0, 0.7);
-  opacity: 1.0;
-  font-weight: bold;
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.3);
+  }
 }
 p {
   text-align: center;
@@ -55,7 +67,6 @@ function randomInt(min, max) {
   return Math.round(rand);
 }
 
-
 function GetRandomEmote() {
   let pg = ["amogus", "amongParty", "bananaDance", "bananaDance", "BLANKIES", "blobDance", "bongoTap", "BONK", 
 	"browsW", "catJAM", "clapW", "clappingW", "coolDoge", "dogeDancedrumTime", 
@@ -69,26 +80,23 @@ function GetRandomEmote() {
   let idx = randomInt(0, pg.length);
   CopyName(pg[idx]);
 }
-
-//window.onload = Test();
 </script> 
 </head>
 <body>
 <table>
 	<thead>
 		<h6>
-			<div class="polaroid" style="max-width:50px; height:60px">
-				<div class="random_container">
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgnM5XOvwRv7g_5NpIFoNsHoWNnzvgi756BA&usqp=CAU" onclick="GetRandomEmote()" style="width:100%">
+			<div class="polaroid" style="max-width:50px; height:60px; float:right">
+				<img class="rot" src="service/dice.gif" onclick="GetRandomEmote()" style="width:100%">
+				<div class="container">
+				<p style="line-height:100%">I feel lucky</p>
 				</div> 
-				<p>random</p>
 			</div>
 		</h6>
 		<p style="font-size:50px">Currently supported Emotes:</p>
 		<p>(Just click the pic to copy text to clipboard)</p>
 	</thead>
 	<tbody>
-		<tr><td><p style="text-align:right">one</p></td></tr>
 		<tr>
 			<td>
 				<div class="polaroid">
@@ -171,7 +179,6 @@ function GetRandomEmote() {
 				</div>
 			</td>
 		</tr>
-		<tr><td><p style="color:red">two</p></td></tr>
 		<tr>
 			<td>
 				<div class="polaroid">
