@@ -22,6 +22,7 @@ div.container {
 }
 img{
   width: 100%;
+  max-width:100px;
 }
 img.rot {
   animation: 2s linear 0s normal none infinite running rot;
