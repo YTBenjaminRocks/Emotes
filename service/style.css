@@ -20,6 +20,9 @@ div.polaroid > img {
 div.container {
   padding: 1% 0px;
 }
+img{
+  width: 100%;
+}
 img.rot {
   animation: 2s linear 0s normal none infinite running rot;
 }
@@ -45,4 +48,7 @@ p {
 }
 body {
   background-color: #f5fff5;
+}
+table {
+  width: 100%;
 }
