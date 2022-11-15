@@ -66,6 +66,7 @@ let pg =
 
 let table = document.createElement('table');
 let tbody = document.createElement('tbody');
+
 table.appendChild(tbody);
 document.getElementById('tb').appendChild(table);
 
