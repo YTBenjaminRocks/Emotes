@@ -12,6 +12,7 @@ img0.src = "service/QR_Youtube.png";
 img0.className = "qr";
 img1.src = "service/QR_Discord.png";
 img1.className = "qr";
+img1.align = "right";
 p.className = "alert";
 p.innerText = "Join community";
 
