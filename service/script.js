@@ -67,7 +67,7 @@ let pg =
 let table = document.createElement('table');
 let tbody = document.createElement('tbody');
 table.appendChild(tbody);
-document.getElementById('body').appendChild(table);
+document.getElementById('tb').appendChild(table);
 
 for (let i = 0; i < pg.length; i+=10){
 	let row = document.createElement('tr');
