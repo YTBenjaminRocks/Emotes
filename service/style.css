@@ -26,6 +26,12 @@ img{
   height:100%;
   max-height:100px;
 }
+img.qr {
+	width: 100%;
+	max-width: 200px;
+	height: 100%;
+	max-height: 200px;
+}
 img.rot {
   animation: 2s linear 0s normal none infinite running rot;
 }
@@ -48,6 +54,12 @@ img.rot {
 p {
   text-align: center;
   line-height: 10%;
+}
+p.alert {
+	text-align: center;
+	line-height: 100%;
+	font-size: 50px;
+	font-weight: bold;
 }
 body {
   background-color: #f5fff5;
