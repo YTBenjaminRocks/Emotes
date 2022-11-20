@@ -7,7 +7,21 @@
 
 <img class="qrlink" src="service/QR_Youtube.png">
 <img class="qrlink" src="service/QR_Discord.png" hidden>
-<script src="service/QRLinks.js"></script>
+<script>
+let counter = 0;
+
+let timerid = setInterval(changeQR, 30000);
+
+function changeQR() {
+    let QR = document.getElementsByClassName("qrlink");
+    for (let i = 0; i < QR.length; i++) {
+        QR[i].hidden = true;
+    }
+    QR[counter].hidden = false;
+    counter++;
+    if (counter >= QR.length) counter = 0;
+}
+</script>
 
 <link rel="shortcut icon" type="image/x-icon" href="service/favicon-turtle.ico">
 <link rel="icon" type="image/x-icon" href="service/favicon-turtle.ico">
