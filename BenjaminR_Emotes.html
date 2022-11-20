@@ -4,25 +4,7 @@
   Emotes
 </title>
 <head>
-
-<img class="qrlink" src="service/QR_Youtube.png">
-<img class="qrlink" src="service/QR_Discord.png" hidden>
-
-<script>
-let counter = 0;
-
-let timerid = setInterval(changeQR, 30000);
-
-function changeQR() {
-    let QR = document.getElementsByClassName("qrlink");
-    for (let i = 0; i < QR.length; i++) {
-        QR[i].hidden = true;
-    }
-    QR[counter].hidden = false;
-    counter++;
-    if (counter >= QR.length) counter = 0;
-}
-</script>
+<title>Emotes</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="service/favicon-turtle.ico">
 <link rel="icon" type="image/x-icon" href="service/favicon-turtle.ico">
@@ -30,6 +12,7 @@ function changeQR() {
 
 <link rel="stylesheet" type="text/css" href="service/style.css">
 
+</script>
 </head>
 <body id="body">
 
@@ -42,11 +25,10 @@ function changeQR() {
 	</div>
 </h6>
 <br>
-<p class="alert">Currently supported Emotes:</p>
+<p style="font-size:50px" align="center">Currently supported Emotes:</p>
 <p align="center">(Just click the pic to copy text to clipboard)</p>
-<div id="tb">
+
 <script src="service/script.js"></script>
-</div>
 
 </body>
 </html>
