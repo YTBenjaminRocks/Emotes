@@ -35,7 +35,6 @@ img.qrlink {
 	overflow: hide;
 	position: absolute;
 }
-}
 img.rot {
   animation: 2s linear 0s normal none infinite running rot;
 }
