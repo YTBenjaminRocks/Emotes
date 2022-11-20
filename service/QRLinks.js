@@ -13,6 +13,11 @@ for (let i = 0; i < arr.length; i++) {
 	div.appendChild(img);
 }
 
+let imgs = document.getElementsByClassName("qr");
+for (let i = 0; i < imgs.length; i++){
+	imgs[i].addEventListener('click', () => {changeQR();}, false);
+}
+
 function changeQR() {
     let QR = document.getElementsByClassName("qr");
     for (let i = 0; i < QR.length; i++) {
