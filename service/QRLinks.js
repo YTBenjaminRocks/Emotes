@@ -3,7 +3,7 @@ let counter = 0;
 let timerid = setInterval(changeQR, 30000);
 
 function changeQR() {
-    let QR = document.getElementsByClassName("qr");
+    let QR = document.getElementsByClassName("qrlink");
     for (let i = 0; i < QR.length; i++) {
         QR[i].hidden = true;
     }
