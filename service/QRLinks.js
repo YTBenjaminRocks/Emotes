@@ -5,7 +5,7 @@ let arr =
 	"QR_Youtube.png"];
 
 let div = document.getElementById("qr_div");
-for (int i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i++) {
 	let img = document.createElement("img");
 	img.className = "qr";
 	img.hidden = true;
