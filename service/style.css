@@ -46,9 +46,15 @@ p {
   text-align: center;
   line-height: 10%;
 }
+p.important {
+	text-align: center;
+	line-height: 100%;
+	font-size: 55px;
+	font-weight: bold;
+}
 body {
-  background-color: #f5fff5;
+	background-color: #f5fff5;
 }
 table {
-  width: 100%;
+	width: 100%;
 }
