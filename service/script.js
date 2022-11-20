@@ -1,3 +1,4 @@
+let counter = 0;
 let pg = 
 	["amogus.gif", 
 	"amongParty.gif", 
@@ -110,6 +111,8 @@ for (let i = 0; i < pg.length; i++){
 	document.getElementById(name + "_img").addEventListener('click', () => {CopyName(name);}, false);
 }
 
+let timerid = setInterval(changeQR, 30000);
+
 function CopyName(id) {
   let copyText = document.getElementById(id);
   copyText.hidden = false;
@@ -126,4 +129,14 @@ function randomInt(min, max) {
 function GetRandomEmote() {
   let idx = randomInt(0, pg.length);
   CopyName(pg[idx].split('.')[0]);
+}
+
+function changeQR() {
+    let QR = document.getElementsByClassName("qr");
+    for (let i = 0; i < QR.length; i++) {
+        QR[i].hidden = true;
+    }
+    QR[counter].hidden = false;
+    counter++;
+    if (counter >= QR.length) counter = 0;
 }
