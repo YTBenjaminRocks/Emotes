@@ -4,6 +4,14 @@ div.polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
   opacity: 0.8;
+  
+  /* NEU: Zentriert alle Inhalte (Bild & Text) horizontal in der Box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 div.polaroid:hover {
   box-shadow: 0 0 3px 2px rgba(0, 200, 0, 0.7);
@@ -14,11 +22,15 @@ div.polaroid:active {
   animation: 1s linear 0s normal none infinite running scale;
 }
 div.polaroid > img {
-  width:100%;
-  max-width:100px;
+  width: 100%;
+  max-width: 100px;
+  /* NEU: Garantiert die horizontale Zentrierung des Bildes */
+  display: block;
+  margin: 0 auto;
 }
 div.container {
   padding: 1% 0px;
+  width: 100%; /* NEU: Dehnt den Textcontainer aus, damit p-Tags zentriert bleiben */
 }
 img{
   width: 100%;
