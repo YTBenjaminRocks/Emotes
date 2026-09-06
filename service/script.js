@@ -5,8 +5,6 @@ async function loadEmotes() {
     try {
         const response = await fetch('/BenjaminR.emotes');
         pg = await response.json();
-        
-        // Nach erfolgreichem Laden die Tabelle aufbauen
         buildTable();
     } catch (error) {
         console.error("Fehler beim Laden der Emotes:", error);
@@ -27,22 +25,23 @@ function buildTable() {
         let row = document.createElement('tr');
         for (let j = 0; j < 10; j++) {
             if (i + j < pg.length) {
-                // Zugriff auf das Objekt in der neuen JSON-Struktur
                 let emote = pg[i + j];
-                let name = emote.code;  // "amogus"
-                let src = emote.src;    // "https://raw.githubusercontent.com/..."
+                let name = emote.code;  
+                let src = emote.src;    
                 
                 let cell = document.createElement('td');
                 let div0 = document.createElement('div');
                 div0.className = "polaroid";
                 
                 let img = document.createElement('img');
-                img.src = src; // Nutzt direkt die URL aus der JSON
+                img.src = src; 
                 img.id = name + "_img";
+                img.style.cursor = "pointer"; // Zeigt an, dass es klickbar ist
                 
                 let div1 = document.createElement('div');
                 div1.id = name + "_container";
                 div1.className = "container";
+                div1.style.cursor = "pointer";
                 
                 let p = document.createElement('p');
                 p.innerText = name;
@@ -64,7 +63,7 @@ function buildTable() {
         tbody.appendChild(row);
     }
 
-    // Event-Listener für Klicks hinzufügen
+    // Event-Listener direkt per Schleife binden
     for (let i = 0; i < pg.length; i++) {
         let name = pg[i].code;
         const container = document.getElementById(name + "_container");
@@ -75,24 +74,27 @@ function buildTable() {
     }
 }
 
-function CopyName(id) {
-    let copyText = document.getElementById(id);
-    if (!copyText) return;
-    
-    copyText.hidden = false;
-    copyText.select();
+function CopyName(textToCopy) {
+    // Falls das versteckte Input-Feld existiert, nutzen wir es als Fallback
+    let copyText = document.getElementById(textToCopy);
     
     if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(copyText.value).then(() => {
-            copyText.hidden = true;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            console.log("Kopiert: " + textToCopy);
         }).catch(err => {
-            document.execCommand("copy");
-            copyText.hidden = true;
+            fallbackCopy(copyText);
         });
     } else {
-        document.execCommand("copy");
-        copyText.hidden = true;
+        fallbackCopy(copyText);
     }
+}
+
+function fallbackCopy(element) {
+    if (!element) return;
+    element.hidden = false;
+    element.select();
+    document.execCommand("copy");
+    element.hidden = true;
 }
 
 function randomInt(min, max) {
