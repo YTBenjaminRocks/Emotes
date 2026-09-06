@@ -1,67 +1,330 @@
 [
-{"code":"amogus","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/amogus.gif"},
-{"code":"amongParty","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/amongParty.gif"},
-{"code":"bananaDance","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/bananaDance.gif"},
-{"code":"birbRave","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/birbRave.gif"},
-{"code":"BLANKIES","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/BLANKIES.webp"},
-{"code":"blobDance","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/blobDance.webp"},
-{"code":"bongoTap","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/bongoTap.gif"},
-{"code":"BONK","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/BONK.gif"},
-{"code":"browsW","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/browsW.gif"},
-{"code":"catJAM","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/catJAM.webp"},
-{"code":"clapW","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/clapW.gif"},
-{"code":"clappingW","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/clappingW.gif"},
-{"code":"coolDoge","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/coolDoge.gif"},
-{"code":"dogeDance","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/dogeDance.gif"},
-{"code":"drumTime","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/drumTime.webp"},
-{"code":"duckPls","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/duckPls.webp"},
-{"code":"EDM","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/EDM.webp"},
-{"code":"FeelsRainMan","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/FeelsRainMan.gif"},
-{"code":"guitarTime","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/guitarTime.webp"},
-{"code":"headbangingW","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/headbangingW.gif"},
-{"code":"jammiesW","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/jammiesW.webp"},
-{"code":"KEKW","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/KEKW.webp"},
-{"code":"marioDance","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/marioDance.gif"},
-{"code":"catParty","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/catParty.gif"},
-{"code":"miyanoHype","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/miyanoHype.gif"},
-{"code":"MYAAA","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/MYAAA.gif"},
-{"code":"NOPERS","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/NOPERS.gif"},
-{"code":"nyanPls","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/nyanPls.webp"},
-{"code":"parrotJAM","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/parrotJAM.gif"},
-{"code":"partyKirby","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/partyKirby.gif"},
-{"code":"peepoArrive","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoArrive.webp"},
-{"code":"peepoBlanket","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoBlanket.png"},
-{"code":"peepoBye","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoBye.webp"},
-{"code":"peepoChat","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoChat.webp"},
-{"code":"peepoClap","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoClap.webp"},
-{"code":"peepoDj","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoDj.webp"},
-{"code":"peepoShy","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/peepoShy.webp"},
-{"code":"pepeJAM","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pepeJAM.gif"},
-{"code":"pikachuS","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pikachuS.png"},
-{"code":"PogU","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/PogU.webp"},
-{"code":"popCat","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/popCat.webp"},
-{"code":"pressF","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pressF.png"},
-{"code":"pugPls","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pugPls.webp"},
-{"code":"rainbowPls","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/rainbowPls.webp"},
-{"code":"ratJAM","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/ratJAM.webp"},
-{"code":"rickroll","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/rickroll.gif"},
-{"code":"SadCatW","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/SadCatW.png"},
-{"code":"SadgeCry","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/SadgeCry.webp"},
-{"code":"turtleHop","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleHop.webp"},
-{"code":"turtleAngry","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleAngry.png"},
-{"code":"turtleCry","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleCry.png"},
-{"code":"turtleDrip","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleDrip.png"},
-{"code":"turtleFlush","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleFlush.png"},
-{"code":"turtleHYPE","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleHYPE.gif"},
-{"code":"turtleJAM","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleJAM.webp"},
-{"code":"turtleJAM","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleJAM.webp"},
-{"code":"turtlePop","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtlePop.gif"},
-{"code":"turtleShower","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleShower.gif"},
-{"code":"turtleHi","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleHi.png"},
-{"code":"turtleYo","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleYo.gif"},
-{"code":"turtleShoe","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/turtleShoe.gif"},
-{"code":"lightersUp","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/lightersUp.gif"},
-{"code":"widepeepoHappy","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/widepeepoHappy.webp"},
-{"code":"lionDance","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/lionDance.gif"},
-{"code":"chipichipi","src":"https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/chipi-chipi-chapa-chapa"}
+  {
+    "code": "BLANKIES",
+    "src": "https://githubusercontent.comBLANKIES.webp"
+  },
+  {
+    "code": "BONK",
+    "src": "https://githubusercontent.comBONK.gif"
+  },
+  {
+    "code": "BirbRave",
+    "src": "https://githubusercontent.comBirbRave.gif"
+  },
+  {
+    "code": "Brows",
+    "src": "https://githubusercontent.comBrows.gif"
+  },
+  {
+    "code": "Clap",
+    "src": "https://githubusercontent.comClap.gif"
+  },
+  {
+    "code": "DrumTime",
+    "src": "https://githubusercontent.comDrumTime.webp"
+  },
+  {
+    "code": "EDM",
+    "src": "https://githubusercontent.comEDM.webp"
+  },
+  {
+    "code": "FeelsRainMan",
+    "src": "https://githubusercontent.comFeelsRainMan.gif"
+  },
+  {
+    "code": "KEKW",
+    "src": "https://githubusercontent.comKEKW.webp"
+  },
+  {
+    "code": "MYAAA",
+    "src": "https://githubusercontent.comMYAAA.gif"
+  },
+  {
+    "code": "NOPERS",
+    "src": "https://githubusercontent.comNOPERS.gif"
+  },
+  {
+    "code": "PartyKirby",
+    "src": "https://githubusercontent.comPartyKirby.gif"
+  },
+  {
+    "code": "PogU",
+    "src": "https://githubusercontent.comPogU.webp"
+  },
+  {
+    "code": "SadCatW",
+    "src": "https://githubusercontent.comSadCatW.png"
+  },
+  {
+    "code": "SadgeCry",
+    "src": "https://githubusercontent.comSadgeCry.webp"
+  },
+  {
+    "code": "TurtleHYPE",
+    "src": "https://githubusercontent.comTurtleHYPE.gif"
+  },
+  {
+    "code": "TurtleJAM",
+    "src": "https://githubusercontent.comTurtleJAM.webp"
+  },
+  {
+    "code": "TurtlePop",
+    "src": "https://githubusercontent.comTurtlePop.gif"
+  },
+  {
+    "code": "amogus",
+    "src": "https://githubusercontent.comamogus.gif"
+  },
+  {
+    "code": "amongParty",
+    "src": "https://githubusercontent.comamongParty.gif"
+  },
+  {
+    "code": "among_party",
+    "src": "https://githubusercontent.comamong_party.gif"
+  },
+  {
+    "code": "bananaDance",
+    "src": "https://githubusercontent.combananaDance.gif"
+  },
+  {
+    "code": "bananadance",
+    "src": "https://githubusercontent.combananadance.gif"
+  },
+  {
+    "code": "birbRave",
+    "src": "https://githubusercontent.combirbRave.gif"
+  },
+  {
+    "code": "blobDance",
+    "src": "https://githubusercontent.comblobDance.webp"
+  },
+  {
+    "code": "bongoTap",
+    "src": "https://githubusercontent.combongoTap.gif"
+  },
+  {
+    "code": "browsW",
+    "src": "https://githubusercontent.combrowsW.gif"
+  },
+  {
+    "code": "catJAM",
+    "src": "https://githubusercontent.comcatJAM.webp"
+  },
+  {
+    "code": "catParty",
+    "src": "https://githubusercontent.comcatParty.gif"
+  },
+  {
+    "code": "chipi-chipi-chapa-chapa",
+    "src": "https://githubusercontent.comchipi-chipi-chapa-chapa.gif"
+  },
+  {
+    "code": "clapW",
+    "src": "https://githubusercontent.comclapW.gif"
+  },
+  {
+    "code": "clappingW",
+    "src": "https://githubusercontent.comclappingW.gif"
+  },
+  {
+    "code": "coolDoge",
+    "src": "https://githubusercontent.comcoolDoge.gif"
+  },
+  {
+    "code": "cool_doge",
+    "src": "https://githubusercontent.comcool_doge.gif"
+  },
+  {
+    "code": "dogeDance",
+    "src": "https://githubusercontent.comdogeDance.gif"
+  },
+  {
+    "code": "doge_dance",
+    "src": "https://githubusercontent.comdoge_dance.gif"
+  },
+  {
+    "code": "drumTime",
+    "src": "https://githubusercontent.comdrumTime.webp"
+  },
+  {
+    "code": "duckPls",
+    "src": "https://githubusercontent.comduckPls.webp"
+  },
+  {
+    "code": "fluteJAM",
+    "src": "https://githubusercontent.comfluteJAM.gif"
+  },
+  {
+    "code": "guitarTime",
+    "src": "https://githubusercontent.comguitarTime.webp"
+  },
+  {
+    "code": "headbangingW",
+    "src": "https://githubusercontent.comheadbangingW.gif"
+  },
+  {
+    "code": "jammiesW",
+    "src": "https://githubusercontent.comjammiesW.webp"
+  },
+  {
+    "code": "lightersUp",
+    "src": "https://githubusercontent.comlightersUp.gif"
+  },
+  {
+    "code": "lionDance",
+    "src": "https://githubusercontent.comlionDance.gif"
+  },
+  {
+    "code": "marioDance",
+    "src": "https://githubusercontent.commarioDance.gif"
+  },
+  {
+    "code": "mariodance",
+    "src": "https://githubusercontent.commariodance.gif"
+  },
+  {
+    "code": "meow_party",
+    "src": "https://githubusercontent.commeow_party.gif"
+  },
+  {
+    "code": "miyanoHype",
+    "src": "https://githubusercontent.commiyanoHype.gif"
+  },
+  {
+    "code": "nyanPls",
+    "src": "https://githubusercontent.comnyanPls.webp"
+  },
+  {
+    "code": "parrotJAM",
+    "src": "https://githubusercontent.comparrotJAM.gif"
+  },
+  {
+    "code": "partyKirby",
+    "src": "https://githubusercontent.compartyKirby.gif"
+  },
+  {
+    "code": "peepoArrive",
+    "src": "https://githubusercontent.compeepoArrive.webp"
+  },
+  {
+    "code": "peepoBlanket",
+    "src": "https://githubusercontent.compeepoBlanket.png"
+  },
+  {
+    "code": "peepoBye",
+    "src": "https://githubusercontent.compeepoBye.webp"
+  },
+  {
+    "code": "peepoChat",
+    "src": "https://githubusercontent.compeepoChat.webp"
+  },
+  {
+    "code": "peepoClap",
+    "src": "https://githubusercontent.compeepoClap.webp"
+  },
+  {
+    "code": "peepoDj",
+    "src": "https://githubusercontent.compeepoDj.webp"
+  },
+  {
+    "code": "peepoShy",
+    "src": "https://githubusercontent.compeepoShy.webp"
+  },
+  {
+    "code": "pepeJAM",
+    "src": "https://githubusercontent.compepeJAM.gif"
+  },
+  {
+    "code": "pepeJAMJAM",
+    "src": "https://githubusercontent.compepeJAMJAM.webp"
+  },
+  {
+    "code": "pikachuS",
+    "src": "https://githubusercontent.compikachuS.png"
+  },
+  {
+    "code": "popCat",
+    "src": "https://githubusercontent.compopCat.webp"
+  },
+  {
+    "code": "pressF",
+    "src": "https://githubusercontent.compressF.png"
+  },
+  {
+    "code": "pugPls",
+    "src": "https://githubusercontent.compugPls.webp"
+  },
+  {
+    "code": "rainbowPls",
+    "src": "https://githubusercontent.comrainbowPls.webp"
+  },
+  {
+    "code": "ratJAM",
+    "src": "https://githubusercontent.comratJAM.webp"
+  },
+  {
+    "code": "rickroll",
+    "src": "https://githubusercontent.comrickroll.gif"
+  },
+  {
+    "code": "test4",
+    "src": "https://githubusercontent.comtest4.gif"
+  },
+  {
+    "code": "test5",
+    "src": "https://githubusercontent.comtest5.gif"
+  },
+  {
+    "code": "turtleAngry",
+    "src": "https://githubusercontent.comturtleAngry.png"
+  },
+  {
+    "code": "turtleCry",
+    "src": "https://githubusercontent.comturtleCry.png"
+  },
+  {
+    "code": "turtleDrip",
+    "src": "https://githubusercontent.comturtleDrip.png"
+  },
+  {
+    "code": "turtleFlush",
+    "src": "https://githubusercontent.comturtleFlush.png"
+  },
+  {
+    "code": "turtleHYPE",
+    "src": "https://githubusercontent.comturtleHYPE.gif"
+  },
+  {
+    "code": "turtleHi",
+    "src": "https://githubusercontent.comturtleHi.png"
+  },
+  {
+    "code": "turtleHop",
+    "src": "https://githubusercontent.comturtleHop.webp"
+  },
+  {
+    "code": "turtleJAM",
+    "src": "https://githubusercontent.comturtleJAM.webp"
+  },
+  {
+    "code": "turtlePop",
+    "src": "https://githubusercontent.comturtlePop.gif"
+  },
+  {
+    "code": "turtleShoe",
+    "src": "https://githubusercontent.comturtleShoe.gif"
+  },
+  {
+    "code": "turtleShower",
+    "src": "https://githubusercontent.comturtleShower.gif"
+  },
+  {
+    "code": "turtleYo",
+    "src": "https://githubusercontent.comturtleYo.gif"
+  },
+  {
+    "code": "widepeepoHappy",
+    "src": "https://githubusercontent.comwidepeepoHappy.webp"
+  }
 ]
