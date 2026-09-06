@@ -3,7 +3,14 @@ let pg = [];
 // Funktion zum Laden der Emotes aus der JSON-Datei
 async function loadEmotes() {
     try {
-        const response = await fetch('/BenjaminR.emotes');
+        // Geht einen Ordner hoch (aus /service/ heraus) in das Hauptverzeichnis
+        const response = await fetch('../BenjaminR.emotes');
+        
+        // Prüfen, ob die Datei wirklich erfolgreich geladen wurde (HTTP 200)
+        if (!response.ok) {
+            throw new Error(`Server antwortete mit Status: ${response.status}`);
+        }
+        
         pg = await response.json();
         buildTable();
     } catch (error) {
@@ -36,7 +43,7 @@ function buildTable() {
                 let img = document.createElement('img');
                 img.src = src; 
                 img.id = name + "_img";
-                img.style.cursor = "pointer"; // Zeigt an, dass es klickbar ist
+                img.style.cursor = "pointer";
                 
                 let div1 = document.createElement('div');
                 div1.id = name + "_container";
@@ -63,7 +70,6 @@ function buildTable() {
         tbody.appendChild(row);
     }
 
-    // Event-Listener direkt per Schleife binden
     for (let i = 0; i < pg.length; i++) {
         let name = pg[i].code;
         const container = document.getElementById(name + "_container");
@@ -75,7 +81,6 @@ function buildTable() {
 }
 
 function CopyName(textToCopy) {
-    // Falls das versteckte Input-Feld existiert, nutzen wir es als Fallback
     let copyText = document.getElementById(textToCopy);
     
     if (navigator.clipboard && navigator.clipboard.writeText) {
