@@ -1,13 +1,14 @@
-// Lädt die JSON-Datenbank dynamisch aus dem Hauptverzeichnis (einen Ordner nach oben)
+// Lädt die JSON-Datenbank dynamisch aus dem Hauptverzeichnis
 fetch('../BenjaminR.emotes')
   .then(response => response.json())
   .then(data => {
-    // Erstellt das Array 'pg' direkt aus den Dateinamen der src-URLs
-    // z.B. "https://.../emotes/amogus.gif" -> "amogus.gif"
+    // Erstellt das Array 'pg' exakt so, wie es dein Original erwartet
+    // extrahiert den Dateinamen (z.B. "amogus.gif") aus der URL
     let pg = data.map(item => {
       return item.src.substring(item.src.lastIndexOf('/') + 1);
     });
 
+    // Startet deine originale Logik mit den dynamischen Daten
     initializeEmotes(pg);
   })
   .catch(error => console.error('Fehler beim Laden der Emote-Datenbank:', error));
@@ -18,37 +19,30 @@ function initializeEmotes(pg) {
   table.appendChild(tbody);
   document.getElementById('body').appendChild(table);
 
-  // Tabelle in 10er-Schritten aufbauen
-  for (let i = 0; i < pg.length; i += 10) {
+  // --- AB HIER 1:1 DEIN ORIGINALER CODE ---
+  for (let i = 0; i < pg.length; i+=10){
     let row = document.createElement('tr');
-    for (let j = 0; j < 10; j++) {
-      if (i + j < pg.length) {
-        let fullname = pg[i + j];
-        
-        // KORREKTUR: Holt den reinen Namen ohne Endung als String (nicht als Array)
-        let name = fullname.substring(0, fullname.lastIndexOf('.'));
-        
+    for(let j = 0; j < 10; j++){
+      if(i+j<pg.length){
+        let fullname = pg[i+j];
+        const arr = fullname.split('.');
+        let name = arr[0];
         let cell = document.createElement('td');
         let div0 = document.createElement('div');
         div0.className = "polaroid";
-        
         let img = document.createElement('img');
-        img.src = "../emotes/" + fullname; // Passt den Pfad an, da emotes im Hauptverzeichnis liegt
+        img.src = "emotes/" + fullname; // Zurückgeändert auf deinen Originalpfad
         img.id = name + "_img";
-        
         let div1 = document.createElement('div');
         div1.id = name + "_container";
         div1.className = "container";
-        
         let p = document.createElement('p');
         p.innerText = name;
-        
         let input = document.createElement('input');
         input.type = "text";
         input.value = name;
         input.id = name;
         input.hidden = true;
-        
         div1.appendChild(input);
         div1.appendChild(p);
         div0.appendChild(img);
@@ -60,37 +54,25 @@ function initializeEmotes(pg) {
     tbody.appendChild(row);
   }
 
-  // Klick-Events für das Kopieren zuweisen
-  for (let i = 0; i < pg.length; i++) {
-    let fullname = pg[i];
-    let name = fullname.substring(0, fullname.lastIndexOf('.'));
-    
-    let containerEl = document.getElementById(name + "_container");
-    let imgEl = document.getElementById(name + "_img");
-
-    if (containerEl && imgEl) {
-      containerEl.addEventListener('click', () => { CopyName(name); }, false);
-      imgEl.addEventListener('click', () => { CopyName(name); }, false);
-    }
+  for (let i = 0; i < pg.length; i++){
+    let name = pg[i].split('.')[0];
+    document.getElementById(name + "_container").addEventListener('click', () => {CopyName(name);}, false);
+    document.getElementById(name + "_img").addEventListener('click', () => {CopyName(name);}, false);
   }
 
-  // Macht GetRandomEmote global verfügbar (z. B. für Buttons im HTML)
+  // Macht GetRandomEmote global für deine HTML-Buttons verfügbar
   window.GetRandomEmote = function() {
-    let idx = randomInt(0, pg.length - 1);
-    let fullname = pg[idx];
-    let name = fullname.substring(0, fullname.lastIndexOf('.'));
-    CopyName(name);
+    let idx = randomInt(0, pg.length);
+    CopyName(pg[idx].split('.')[0]);
   }
 }
 
 function CopyName(id) {
   let copyText = document.getElementById(id);
-  if (copyText) {
-    copyText.hidden = false;
-    copyText.select();
-    document.execCommand("copy");
-    copyText.hidden = true;
-  }
+  copyText.hidden = false;
+  copyText.select();
+  document.execCommand("copy");
+  copyText.hidden = true;
 }
 
 function randomInt(min, max) {
