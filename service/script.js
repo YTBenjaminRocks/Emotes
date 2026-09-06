@@ -3,7 +3,6 @@ let pg = [];
 // Funktion zum Laden der Emotes aus der JSON-Datei
 async function loadEmotes() {
     try {
-        // Pfad relativ zur Repository-Struktur anpassen, falls nötig
         const response = await fetch('/BenjaminR.emotes');
         pg = await response.json();
         
@@ -28,21 +27,26 @@ function buildTable() {
         let row = document.createElement('tr');
         for (let j = 0; j < 10; j++) {
             if (i + j < pg.length) {
-                let fullname = pg[i + j];
-                const arr = fullname.split('.');
-                let name = arr[0];
+                // Zugriff auf das Objekt in der neuen JSON-Struktur
+                let emote = pg[i + j];
+                let name = emote.code;  // "amogus"
+                let src = emote.src;    // "https://raw.githubusercontent.com/..."
+                
                 let cell = document.createElement('td');
                 let div0 = document.createElement('div');
                 div0.className = "polaroid";
+                
                 let img = document.createElement('img');
-                // Pfad zu den Bildern anpassen, falls "emotes/" woanders liegt
-                img.src = "emotes/" + fullname; 
+                img.src = src; // Nutzt direkt die URL aus der JSON
                 img.id = name + "_img";
+                
                 let div1 = document.createElement('div');
                 div1.id = name + "_container";
                 div1.className = "container";
+                
                 let p = document.createElement('p');
                 p.innerText = name;
+                
                 let input = document.createElement('input');
                 input.type = "text";
                 input.value = name;
@@ -60,9 +64,9 @@ function buildTable() {
         tbody.appendChild(row);
     }
 
-    // Event-Listener direkt nach dem Erstellen der Elemente hinzufügen
+    // Event-Listener für Klicks hinzufügen
     for (let i = 0; i < pg.length; i++) {
-        let name = pg[i].split('.')[0];
+        let name = pg[i].code;
         const container = document.getElementById(name + "_container");
         const img = document.getElementById(name + "_img");
         
@@ -78,7 +82,6 @@ function CopyName(id) {
     copyText.hidden = false;
     copyText.select();
     
-    // Moderne Alternative zu execCommand, falls vom Browser unterstützt
     if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(copyText.value).then(() => {
             copyText.hidden = true;
@@ -99,8 +102,8 @@ function randomInt(min, max) {
 
 function GetRandomEmote() {
     if (pg.length === 0) return;
-    let idx = randomInt(0, pg.length - 1); // -1 korrigiert den Index-Überlauf
-    CopyName(pg[idx].split('.')[0]);
+    let idx = randomInt(0, pg.length - 1);
+    CopyName(pg[idx].code);
 }
 
 // Initialer Start des Skripts
