@@ -1,54 +1,50 @@
 let pg = [];
 
-// Funktion zum Laden der Emotes aus der JSON-Datei
+// 1. Daten dynamisch aus der JSON-Datei laden
 async function loadEmotes() {
     try {
-        // Geht einen Ordner hoch (aus /service/ heraus) in das Hauptverzeichnis
-        const response = await fetch('../BenjaminR.emotes');
-        
-        // Prüfen, ob die Datei wirklich erfolgreich geladen wurde (HTTP 200)
+        // Sucht relativ zur index.html im Hauptverzeichnis
+        const response = await fetch('BenjaminR.emotes');
         if (!response.ok) {
-            throw new Error(`Server antwortete mit Status: ${response.status}`);
+            throw new Error(`Fehler beim Laden: ${response.status}`);
         }
-        
         pg = await response.json();
+        
+        // Nach erfolgreichem Laden die Tabelle generieren
         buildTable();
     } catch (error) {
         console.error("Fehler beim Laden der Emotes:", error);
     }
 }
 
+// 2. Die Tabelle basierend auf den geladenen Daten aufbauen
 function buildTable() {
     let table = document.createElement('table');
     let tbody = document.createElement('tbody');
     table.appendChild(tbody);
-    
-    const bodyElement = document.getElementById('body');
-    if (bodyElement) {
-        bodyElement.appendChild(table);
-    }
+    document.getElementById('body').appendChild(table);
 
+    // Schleife für die Zeilen (10 Emotes pro Zeile)
     for (let i = 0; i < pg.length; i += 10) {
         let row = document.createElement('tr');
         for (let j = 0; j < 10; j++) {
             if (i + j < pg.length) {
+                // Holt das Emote-Objekt aus dem Array
                 let emote = pg[i + j];
-                let name = emote.code;  
-                let src = emote.src;    
+                let name = emote.code; // Nutzt das 'code'-Feld (z.B. "amogus")
+                let src = emote.src;   // Nutzt die direkte GitHub-Bild-URL
                 
                 let cell = document.createElement('td');
                 let div0 = document.createElement('div');
                 div0.className = "polaroid";
                 
                 let img = document.createElement('img');
-                img.src = src; 
+                img.src = src;
                 img.id = name + "_img";
-                img.style.cursor = "pointer";
                 
                 let div1 = document.createElement('div');
                 div1.id = name + "_container";
                 div1.className = "container";
-                div1.style.cursor = "pointer";
                 
                 let p = document.createElement('p');
                 p.innerText = name;
@@ -70,36 +66,22 @@ function buildTable() {
         tbody.appendChild(row);
     }
 
+    // 3. Event-Listener exakt wie im Original hinzufügen
     for (let i = 0; i < pg.length; i++) {
         let name = pg[i].code;
-        const container = document.getElementById(name + "_container");
-        const img = document.getElementById(name + "_img");
-        
-        if (container) container.addEventListener('click', () => { CopyName(name); }, false);
-        if (img) img.addEventListener('click', () => { CopyName(name); }, false);
+        document.getElementById(name + "_container").addEventListener('click', () => { CopyName(name); }, false);
+        document.getElementById(name + "_img").addEventListener('click', () => { CopyName(name); }, false);
     }
 }
 
-function CopyName(textToCopy) {
-    let copyText = document.getElementById(textToCopy);
-    
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(textToCopy).then(() => {
-            console.log("Kopiert: " + textToCopy);
-        }).catch(err => {
-            fallbackCopy(copyText);
-        });
-    } else {
-        fallbackCopy(copyText);
-    }
-}
-
-function fallbackCopy(element) {
-    if (!element) return;
-    element.hidden = false;
-    element.select();
+// 4. Originale Hilfsfunktionen unverändert beibehalten
+function CopyName(id) {
+    let copyText = document.getElementById(id);
+    if (!copyText) return;
+    copyText.hidden = false;
+    copyText.select();
     document.execCommand("copy");
-    element.hidden = true;
+    copyText.hidden = true;
 }
 
 function randomInt(min, max) {
@@ -113,5 +95,5 @@ function GetRandomEmote() {
     CopyName(pg[idx].code);
 }
 
-// Initialer Start des Skripts
+// Skript starten
 loadEmotes();
