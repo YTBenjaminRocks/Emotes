@@ -1,4 +1,4 @@
-// Lädt die JSON-Datenbank dynamisch
+// Lädt die JSON-Datenbank dynamisch aus dem Hauptverzeichnis (einen Ordner nach oben)
 fetch('../BenjaminR.emotes')
   .then(response => response.json())
   .then(data => {
@@ -18,29 +18,37 @@ function initializeEmotes(pg) {
   table.appendChild(tbody);
   document.getElementById('body').appendChild(table);
 
-  for (let i = 0; i < pg.length; i+=10){
+  // Tabelle in 10er-Schritten aufbauen
+  for (let i = 0; i < pg.length; i += 10) {
     let row = document.createElement('tr');
-    for(let j = 0; j < 10; j++){
-      if(i+j<pg.length){
-        let fullname = pg[i+j];
-        const arr = fullname.split('.');
-        let name = arr[0];
+    for (let j = 0; j < 10; j++) {
+      if (i + j < pg.length) {
+        let fullname = pg[i + j];
+        
+        // KORREKTUR: Holt den reinen Namen ohne Endung als String (nicht als Array)
+        let name = fullname.substring(0, fullname.lastIndexOf('.'));
+        
         let cell = document.createElement('td');
         let div0 = document.createElement('div');
         div0.className = "polaroid";
+        
         let img = document.createElement('img');
-        img.src = "emotes/" + fullname;
+        img.src = "../emotes/" + fullname; // Passt den Pfad an, da emotes im Hauptverzeichnis liegt
         img.id = name + "_img";
+        
         let div1 = document.createElement('div');
         div1.id = name + "_container";
         div1.className = "container";
+        
         let p = document.createElement('p');
         p.innerText = name;
+        
         let input = document.createElement('input');
         input.type = "text";
         input.value = name;
         input.id = name;
         input.hidden = true;
+        
         div1.appendChild(input);
         div1.appendChild(p);
         div0.appendChild(img);
@@ -52,27 +60,37 @@ function initializeEmotes(pg) {
     tbody.appendChild(row);
   }
 
-  for (let i = 0; i < pg.length; i++){
-    let name = pg[i].split('.')[0];
-    if(document.getElementById(name + "_container")) {
-      document.getElementById(name + "_container").addEventListener('click', () => {CopyName(name);}, false);
-      document.getElementById(name + "_img").addEventListener('click', () => {CopyName(name);}, false);
+  // Klick-Events für das Kopieren zuweisen
+  for (let i = 0; i < pg.length; i++) {
+    let fullname = pg[i];
+    let name = fullname.substring(0, fullname.lastIndexOf('.'));
+    
+    let containerEl = document.getElementById(name + "_container");
+    let imgEl = document.getElementById(name + "_img");
+
+    if (containerEl && imgEl) {
+      containerEl.addEventListener('click', () => { CopyName(name); }, false);
+      imgEl.addEventListener('click', () => { CopyName(name); }, false);
     }
   }
 
-  // Macht GetRandomEmote global verfügbar, falls es von außen (z.B. Button) aufgerufen wird
+  // Macht GetRandomEmote global verfügbar (z. B. für Buttons im HTML)
   window.GetRandomEmote = function() {
-    let idx = randomInt(0, pg.length);
-    CopyName(pg[idx].split('.')[0]);
+    let idx = randomInt(0, pg.length - 1);
+    let fullname = pg[idx];
+    let name = fullname.substring(0, fullname.lastIndexOf('.'));
+    CopyName(name);
   }
 }
 
 function CopyName(id) {
   let copyText = document.getElementById(id);
-  copyText.hidden = false;
-  copyText.select();
-  document.execCommand("copy");
-  copyText.hidden = true;
+  if (copyText) {
+    copyText.hidden = false;
+    copyText.select();
+    document.execCommand("copy");
+    copyText.hidden = true;
+  }
 }
 
 function randomInt(min, max) {
