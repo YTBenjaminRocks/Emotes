@@ -8,6 +8,22 @@
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/BONK.gif"
   },
   {
+    "code": "BirbRave",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/BirbRave.gif"
+  },
+  {
+    "code": "Brows",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/Brows.gif"
+  },
+  {
+    "code": "Clap",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/Clap.gif"
+  },
+  {
+    "code": "DrumTime",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/DrumTime.webp"
+  },
+  {
     "code": "EDM",
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/EDM.webp"
   },
@@ -28,6 +44,10 @@
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/NOPERS.gif"
   },
   {
+    "code": "PartyKirby",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/PartyKirby.gif"
+  },
+  {
     "code": "PogU",
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/PogU.webp"
   },
@@ -40,6 +60,18 @@
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/SadgeCry.webp"
   },
   {
+    "code": "TurtleHYPE",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/TurtleHYPE.gif"
+  },
+  {
+    "code": "TurtleJAM",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/TurtleJAM.webp"
+  },
+  {
+    "code": "TurtlePop",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/TurtlePop.gif"
+  },
+  {
     "code": "amogus",
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/amogus.gif"
   },
@@ -48,8 +80,16 @@
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/amongParty.gif"
   },
   {
+    "code": "among_party",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/among_party.gif"
+  },
+  {
     "code": "bananaDance",
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/bananaDance.gif"
+  },
+  {
+    "code": "bananadance",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/bananadance.gif"
   },
   {
     "code": "birbRave",
@@ -76,6 +116,10 @@
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/catParty.gif"
   },
   {
+    "code": "chipi-chipi-chapa-chapa",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/chipi-chipi-chapa-chapa.gif"
+  },
+  {
     "code": "chipichipi",
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/chipi-chipi-chapa-chapa"
   },
@@ -92,8 +136,16 @@
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/coolDoge.gif"
   },
   {
+    "code": "cool_doge",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/cool_doge.gif"
+  },
+  {
     "code": "dogeDance",
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/dogeDance.gif"
+  },
+  {
+    "code": "doge_dance",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/doge_dance.gif"
   },
   {
     "code": "drumTime",
@@ -102,6 +154,10 @@
   {
     "code": "duckPls",
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/duckPls.webp"
+  },
+  {
+    "code": "fluteJAM",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/fluteJAM.gif"
   },
   {
     "code": "guitarTime",
@@ -126,6 +182,14 @@
   {
     "code": "marioDance",
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/marioDance.gif"
+  },
+  {
+    "code": "mariodance",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/mariodance.gif"
+  },
+  {
+    "code": "meow_party",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/meow_party.gif"
   },
   {
     "code": "miyanoHype",
@@ -176,6 +240,10 @@
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pepeJAM.gif"
   },
   {
+    "code": "pepeJAMJAM",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pepeJAMJAM.webp"
+  },
+  {
     "code": "pikachuS",
     "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/pikachuS.png"
   },
@@ -218,6 +286,10 @@
   {
     "code": "test4",
     "src": "https://githubusercontent.comtest4.gif"
+  },
+  {
+    "code": "test5",
+    "src": "https://raw.githubusercontent.com/YTBenjaminRocks/Emotes/main/emotes/test5.gif"
   },
   {
     "code": "turtleAngry",
